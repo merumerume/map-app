@@ -1,0 +1,7 @@
+requirements.txtが存在するディレクトリ内で以下のコマンドを実行
+python3 -m venv venv
+python3 source venv/bin/activate
+
+アプリケーション起動方法
+manage.pyが存在するディレクトリ内で以下を実行
+gunicorn mapproject.wsgi

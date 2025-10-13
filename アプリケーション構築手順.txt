@@ -1,8 +1,7 @@
-requirements.txtが存在するディレクトリ内で以下のコマンドを実行
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
+事前準備　docker/docker composeのインストール
 
-アプリケーション起動方法
-manage.pyが存在するディレクトリ内で以下を実行
-gunicorn mapproject.wsgi
+アプリケーション起動手順
+docker-compose.ymlが存在するディレクトリで以下のコマンドを実行
+docker compose up(docker-compose upの可能性もあり)
+
+makemigrationsなどはmanage.pyが存在するディレクトリで通常通り実行する（今のところは実行不要）
